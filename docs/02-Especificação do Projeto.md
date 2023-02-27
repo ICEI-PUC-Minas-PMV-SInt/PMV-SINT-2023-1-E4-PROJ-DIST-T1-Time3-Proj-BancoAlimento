@@ -308,15 +308,43 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Permitir que o usuário faça login de entrada| ALTA | 
+|RF-002| Permitir que o usuário faça logoff do sistema| ALTA |
+|RF-003| Permitir que o administrador cadastre os usuários do sistema| ALTA |
+|RF-004| Permitir que o administrador consulte, altere e exclua o cadastro dos usuários do sistema| ALTA |
+|RF-005| Permitir que o usuário logado consulte o CEP e obtenha o endereço disponibilizado pelo API consulta CEP durante o cadastro dos beneficiários.|
+|RF-006| Permitir que o usuário cadastre os beneficiários| ALTA |
+|RF-007| Permitir que o usuário consulte, altere e exclua o cadastro dos beneficiários| ALTA |
+|RF-008| Permitir que o usuário registre as retiradas de cestas pelo beneficiário| ALTA |
+|RF-008| Restringir a retirada de cesta, conforme periodicidade estabelecida pelo município| ALTA |
+|RF-009| Permitir que o usuário visualize histórico de retirada dos beneficiários| MÉDIA |
+|RF-010| Permitir que o usuário realize a redefinição de senha| MÉDIA |
+|RF-011| Consultar data de recebimento de cesta| BAIXA |
+|RF-012| Consultar local de retirada de cesta| ALTA |
+|RF-013| Consultar recebimento de cesta | ALTA |
+|RF-014| Permitir que após o usário gravar os dados de retirada de cesta, mensagens assíncronas sejam enviadas para o histórico de consulta 
+de retiradas do portal do Beneficiário.| ALTA |
+|RF-015| Permitir que mensagem de erro seja enviada ao usuário quando a mensagem não for enviada para o histórico de consulta do portal do Beneficiário.
+|RF-016| Fornecer a outros sistemas parceiros informações de famílias beneficiadas através da consulta pelo CPF.
+
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| Utilizar o SCRUM como metodologia de desenvolvimento| ALTA | 
+|RNF-002| O sistema deve ser web |MÉDIA | 
+|RNF-003| O sistema será desenvolvido em HTML5, CSS3 e JS| MÉDIA| 
+|RNF-004| O sistema deve ser executado nos principais navegadores (Chrome, mozila e Edge)| MÉDIA | 
+|RNF-005| O sistema deve ser responsivo para adaptação em dispositivos móveis | MÉDIA | 
+|RNF-006| Deve processar requisições do usuário em no máximo 3s| BAIXA| 
+|RNF-007| Para que o sistema seja acessado, é necessário estar conectado a internet| MÉDIA| 
+|RNF-008| Utilizar um banco de dados para verificar informações de usuários, cestas, beneficiários e instituições| MÉDIA| 
+|RNF-009| O sistema deve exigir autenticação prévia de usuários| MÉDIA| 
+|RNF-010| O sistema deve fazer backup a cada 24 horas| MÉDIA| 
+|RNF-011| O sistema deve ter boa usabilidade| MÉDIA| 
+|RNF-012| O sistema deve conter mensagens que informem erros de utilização| MÉDIA| 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
