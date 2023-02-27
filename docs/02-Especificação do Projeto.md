@@ -342,7 +342,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |01| O projeto deverá ser entregue até o final do semestre. |
 |02| O front end deve ser desenvolvido com a linguagem de programação Javascript e para isso deve ser utilizado o framework React na versão mais recente. |
 |03| Deve ser utilizado o framework Bootstrap para padronização de interface do usuário. |
-|04| Como linguagem de folha de estilos deverá ser utilizado o CSSS. |
+|04| Como linguagem de folha de estilos deverá ser utilizado o CSS. |
 |05| O sistema deve fazer uso de Media Queries e do sistema de Grid do Bootstrap para ajustar de forma responsiva em aparelhos de diferentes resoluções. |
 |06| O sistema deverá expor funcionalidades e interoperar com  outras aplicação legadas através do protocolo HTTP por meio de APIs RESTful. |
 |07| O transporte de informações se dará por meio do formato JSON. |
