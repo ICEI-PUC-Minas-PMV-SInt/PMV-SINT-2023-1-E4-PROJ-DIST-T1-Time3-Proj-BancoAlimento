@@ -339,14 +339,47 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue até o final do semestre. |
+|02| O front end deve ser desenvolvido com a linguagem de programação Javascript e para isso deve ser utilizado o framework React na versão mais recente. |
+|03| Deve ser utilizado o framework Bootstrap para padronização de interface do usuário. |
+|04| Como linguagem de folha de estilos deverá ser utilizado o CSSS. |
+|05| O sistema deve fazer uso de Media Queries e do sistema de Grid do Bootstrap para ajustar de forma responsiva em aparelhos de diferentes resoluções. |
+|06| O sistema deverá expor funcionalidades e interoperar com  outras aplicação legadas através do protocolo HTTP por meio de APIs RESTful. |
+|07| O transporte de informações se dará por meio do formato JSON. |
+|08| O mecanismo de autorização entre as APIs deverá ser feiro por meio do JWT. |
+|09| O sistema de ser construido de forma modular para faciliatr a implantação. |
+|10| Os módulos que compõem os microsserviços no back end devem ser desenvolvidos na linguagem de programação C# utilizando .Net como ambiente de execução do lado do servidor. |
+|11| Deve ser utilizado como ferramenta de versionamento o GIT e cada módulo deve possuir repositório distinto para melhor controle das modificações do código. |
+|12| O sistema deve possuir características de aplização distribuída: abertura, portabiliadde, uso de recursos de rede. |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+## Mecanismos Arquiteturais
+
+|Ambiente | Design  | Implementação |
+|------|-----------------------------------------|----|
+|Persistência| Framework ORM | - | 
+|Persistência| Banco de dados relacional | - |
+|Front end| Framework de desenvolvimento | React |
+|Front end| Linguagem de programação | JavaScript |
+|Front end| Framework de folhas de estilos | Bootstrap |
+|Folhas de estilo| Linguagem de folha de estilos | CSS |
+|Deploy| Plataforma de automatização de deploy | - |
+|Back end| Linguagem de programação | C# |
+|Back end| Ambiente de execução | .Net |
+|Back end| Serviço de execução de código | - |
+|Back end| Gerenciador de tráfego | - |
+|Autenticação| Padrão de formato para autenticação | JWT |
+|Autenticação| Serviço de autenticação | - |
+|Integração| Formato de transporte de informações | JSON |
+|Integração| Protocolo de comunicação | HTTP |
+|Integração| Estilo de arquitetura | REST |
+|Versionamento| Controle e armazenamento de código fonte | GitHub |
+|Versionamento| Versionamento de código fonte | Git |
+|Automação| Ferramenta de workflow | - |
+|Build| Ferramenta de build de componenetes do software | NPM |
+
+
+
 
 ## Diagrama de Casos de Uso
 
