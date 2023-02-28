@@ -312,7 +312,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-002| Permitir que o usuário faça logoff do sistema| ALTA |
 |RF-003| Permitir que o administrador cadastre os usuários do sistema| ALTA |
 |RF-004| Permitir que o administrador consulte, altere e exclua o cadastro dos usuários do sistema| ALTA |
-|RF-005| Permitir que o usuário logado consulte o CEP e obtenha o endereço disponibilizado pelo API consulta CEP durante o cadastro dos beneficiários.|
+|RF-005| Permitir que o usuário logado consulte o CEP e obtenha o endereço disponibilizado pelo API consulta CEP durante o cadastro dos beneficiários.| ALTA |
 |RF-006| Permitir que o usuário cadastre os beneficiários| ALTA |
 |RF-007| Permitir que o usuário consulte, altere e exclua o cadastro dos beneficiários| ALTA |
 |RF-008| Permitir que o usuário registre as retiradas de cestas pelo beneficiário| ALTA |
@@ -322,10 +322,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-011| Consultar data de recebimento de cesta| BAIXA |
 |RF-012| Consultar local de retirada de cesta| ALTA |
 |RF-013| Consultar recebimento de cesta | ALTA |
-|RF-014| Permitir que após o usário gravar os dados de retirada de cesta, mensagens assíncronas sejam enviadas para o histórico de consulta 
-de retiradas do portal do Beneficiário.| ALTA |
-|RF-015| Permitir que mensagem de erro seja enviada ao usuário quando a mensagem não for enviada para o histórico de consulta do portal do Beneficiário.
-|RF-016| Fornecer a outros sistemas parceiros informações de famílias beneficiadas através da consulta pelo CPF.
+|RF-014| Permitir que após o usário gravar os dados de retirada de cesta, mensagens assíncronas sejam enviadas para o histórico de consulta de retiradas do portal do Beneficiário.| ALTA |
+|RF-015| Permitir que mensagem de erro seja enviada ao usuário quando a mensagem não for enviada para o histórico de consulta do portal do Beneficiário| ALTA |
+|RF-016| Fornecer a outros sistemas parceiros informações de famílias beneficiadas através da consulta pelo CPF| ALTA |
 
 
 
@@ -337,14 +336,62 @@ de retiradas do portal do Beneficiário.| ALTA |
 |RNF-002| O sistema deve ser web |MÉDIA | 
 |RNF-003| O sistema será desenvolvido em HTML5, CSS3 e JS| MÉDIA| 
 |RNF-004| O sistema deve ser executado nos principais navegadores (Chrome, mozila e Edge)| MÉDIA | 
-|RNF-005| O sistema deve ser responsivo para adaptação em dispositivos móveis | MÉDIA | 
-|RNF-006| Deve processar requisições do usuário em no máximo 3s| BAIXA| 
+
+-Acessibilidade
+
+|RNF-00| O sistema deve ser responsivo para adaptação em dispositivos móveis| 
+|--|-------------------------------------------------------|
+|Estímulo| Usuário logado utilizazndo a interface gráfica do sistema.|
+|Fonte do estímulo| Usuário logado.|
+|Ambiente| Sistema com carga baixa, normal ou além do normal.|
+|Artefato| Módulos de conteúdo.|
+|Resposta| A interface gráfica do projeto apresenta navegabilidade e objetividade nas ações disponíveis ao usuário.|
+|Medida de resposta|O usuário realiza suas ações rapidamente e sem desvios indesejados para outras funcionalidades.|
+
+-Desempenho
+
+|RNF-00| Deve processar requisições do usuário em no máximo 3 segundos|
+|--|-------------------------------------------------------|
+|Estímulo| Usuário autenticado acessa uma funcionallidade na interface gráfica do sistema.|
+|Fonte do estímulo| Usuário autenticado.|
+|Ambiente| Sistema com carga normal.|
+|Artefato| Módulos de canteúdo.|
+|Resposta| Entrada de usuário no sistema e acesso as páginas do sistema.|
+|Medida de resposta|Todas as requisisções com usuários e senhas corretos devem dar acesso ao usuário a área protegida do sistema.|
+
+
+
 |RNF-007| Para que o sistema seja acessado, é necessário estar conectado a internet| MÉDIA| 
-|RNF-008| Utilizar um banco de dados para verificar informações de usuários, cestas, beneficiários e instituições| MÉDIA| 
-|RNF-009| O sistema deve exigir autenticação prévia de usuários| MÉDIA| 
-|RNF-010| O sistema deve fazer backup a cada 24 horas| MÉDIA| 
+
+
+- Segurança
+
+|RNF-00| O sistema deve exigir autenticação prévia de usuários|
+|--|-------------------------------------------------------|
+|Estímulo| Usuário realiza ação de carregamento de uma página potregida ao qual necessita de login e senha para ser viasualizada.|
+|Fonte do estímulo| Usuário autenticado.|
+|Ambiente| Sistema com carga normal.|
+|Artefato| Módulo de autenticação.|
+|Resposta| Entrada de usuário no sistema e acesso as páginas do sistema.|
+|Medida de resposta|Todas as requisisções com usuários e senhas corretos devem dar acesso ao usuário a área protegida do sistema.|
+
+- Segurança
+
+|RFN-00| O sistema deve possuir controle de caesso baseado em role|
+|--|-------------------------------------------------------|
+|Estímulo| Usuário com perfil de administrador realiza cadatro de um novo usuário do sistema.|
+|Fonte do estímulo| Usuário administrador.|
+|Ambiente| Sistema com carga baixa, normal ou além do normal.|
+|Artefato| Módulo de autenticação.|
+|Resposta| Cadastro de usuário no sistema.|
+|Medida de resposta| Ao verificar o banco de dados, o novo usuário deverá ter o perfil de acordo com o que foi cadastrado.|
+
+  
 |RNF-011| O sistema deve ter boa usabilidade| MÉDIA| 
 |RNF-012| O sistema deve conter mensagens que informem erros de utilização| MÉDIA| 
+|RNF-009| |
+|RNF-010| O sistema deve fazer backup a cada 24 horas|
+|RNF-008| Utilizar um banco de dados para verificar informações de usuários, cestas, beneficiários e instituições| MÉDIA| 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
@@ -375,8 +422,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |06| O sistema deverá expor funcionalidades e interoperar com  outras aplicação legadas através do protocolo HTTP por meio de APIs RESTful. |
 |07| O transporte de informações se dará por meio do formato JSON. |
 |08| O mecanismo de autorização entre as APIs deverá ser feiro por meio do JWT. |
-|09| O sistema de ser construido de forma modular para faciliatr a implantação. |
-|10| Os módulos que compõem os microsserviços no back end devem ser desenvolvidos na linguagem de programação C# utilizando .Net como ambiente de execução do lado do servidor. |
+|09| O sistema deve ser construido de forma modular para faciliatr a implantação. |
+|10| Os módulos que compõem os microsserviços no back end devem ser desenvolvidos na linguagem de programação C# utilizando .NET como ambiente de execução do lado do servidor. |
 |11| Deve ser utilizado como ferramenta de versionamento o GIT e cada módulo deve possuir repositório distinto para melhor controle das modificações do código. |
 |12| O sistema deve possuir características de aplização distribuída: abertura, portabiliadde, uso de recursos de rede. |
 
@@ -385,15 +432,16 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |Ambiente | Design  | Implementação |
 |------|-----------------------------------------|----|
-|Persistência| Framework ORM | - | 
-|Persistência| Banco de dados relacional | - |
+|Persistência| Framework ORM | Entity Framework | 
+|Persistência| Banco de dados relacional | SQLServer |
 |Front end| Framework de desenvolvimento | React |
 |Front end| Linguagem de programação | JavaScript |
 |Front end| Framework de folhas de estilos | Bootstrap |
 |Folhas de estilo| Linguagem de folha de estilos | CSS |
-|Deploy| Plataforma de automatização de deploy | - |
+|Deploy| Plataforma de automatização de deploy | Heroku |
 |Back end| Linguagem de programação | C# |
-|Back end| Ambiente de execução | .Net |
+|Back end| Framework de desenvolvimento | ASP.NET Core |
+|Back end| Ambiente de execução | .NET |
 |Back end| Serviço de execução de código | - |
 |Back end| Gerenciador de tráfego | - |
 |Autenticação| Padrão de formato para autenticação | JWT |
