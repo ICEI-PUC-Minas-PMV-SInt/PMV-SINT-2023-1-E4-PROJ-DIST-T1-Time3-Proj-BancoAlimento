@@ -332,7 +332,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 - Usabilidade
 
-|RNF-00| O sistema deve ser pensado para o usuário|
+|RNF-001| O sistema deve ser pensado para o usuário|
 |--|-------------------------------------------------------|
 |Estímulo| O Usuário realiza ações específicas e objetivas no sistema.|
 |Fonte do estímulo| Usuário.|
@@ -343,7 +343,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 - Disponibilidade
 
-|RNF-00| O sistema deve estar disponível em horário integral, durante 24h por dia e sete dias por semana|
+|RNF-002| O sistema deve estar disponível em horário integral, durante 24h por dia e sete dias por semana|
 |--|-------------------------------------------------------|
 |Estímulo| Usuário acessa sistema no domingo no periódo da madrugada.|
 |Fonte do estímulo| Usuário.|
@@ -354,7 +354,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 - Desempenho
 
-|RNF-00| A latência total do sistema não deve ultrapassar 10 segundos|
+|RNF-003| A latência total do sistema não deve ultrapassar 10 segundos|
 |--|-------------------------------------------------------|
 |Estímulo| Usuário autenticado acessa uma funcionallidade na interface gráfica do sistema.|
 |Fonte do estímulo| Usuário autenticado.|
@@ -365,7 +365,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 - Modificabilidade
 
-|RNF-003| O sistema deve ser modular e componentizado, utilizando orientação a objetos e ser construído com arquitetura distribuída|
+|RNF-004| O sistema deve ser modular e componentizado, utilizando orientação a objetos e ser construído com arquitetura distribuída|
 |--|-------------------------------------------------------|
 |Estímulo| Construção e integração de um novo módulo com ouros módulos da arquitetura distribuída.|
 |Fonte do estímulo| Desenvolvedor de software.|
@@ -376,7 +376,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 - Portabilidade
 
-|RNF-004| O sistema deve ser executado nos principais navegadores (Chrome, mozila e Edge)|
+|RNF-005| O sistema deve ser executado nos principais navegadores (Chrome, mozila e Edge)|
 |--|-------------------------------------------------------|
 |Estímulo| Usuário acessando o sistema.|
 |Fonte do estímulo| Usuário.|
@@ -387,7 +387,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 - Portabilidade
 
-|RNF-00| O sistema deve ser responsivo para adaptação em dispositivos móveis| 
+|RNF-006| O sistema deve ser responsivo para adaptação em dispositivos móveis| 
 |--|-------------------------------------------------------|
 |Estímulo| Usuário logado utilizazndo a interface gráfica do sistema.|
 |Fonte do estímulo| Usuário logado.|
@@ -398,7 +398,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 - Segurança
 
-|RNF-00| O sistema deve exigir autenticação prévia de usuários|
+|RNF-007| O sistema deve exigir autenticação prévia de usuários|
 |--|-------------------------------------------------------|
 |Estímulo| Usuário realiza ação de carregamento de uma página potregida ao qual necessita de login e senha para ser viasualizada.|
 |Fonte do estímulo| Usuário autenticado.|
@@ -409,7 +409,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 - Segurança
 
-|RFN-00| O sistema deve possuir controle de caesso baseado em role|
+|RFN-008| O sistema deve possuir controle de caesso baseado em role|
 |--|-------------------------------------------------------|
 |Estímulo| Usuário com perfil de administrador realiza cadatro de um novo usuário do sistema.|
 |Fonte do estímulo| Usuário administrador.|
@@ -420,7 +420,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 - Interoperabilidade
 
-|RFN-00| O sistema deverá interoperar com aplicações legadas com baixo acoplamento utilizando APIs ou outros recursos para consumo de serviços|
+|RFN-009| O sistema deverá interoperar com aplicações legadas com baixo acoplamento utilizando APIs ou outros recursos para consumo de serviços|
 |--|-------------------------------------------------------|
 |Estímulo| O sistema para completar uma operação precisa recuperar uma informação que está localizada no domínio de uma aplicação legada.|
 |Fonte do estímulo|O sistema como um todo.|
