@@ -330,39 +330,71 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| Utilizar o SCRUM como metodologia de desenvolvimento| ALTA | 
-|RNF-002| O sistema deve ser web |MÉDIA | 
-|RNF-003| O sistema será desenvolvido em HTML5, CSS3 e JS| MÉDIA| 
-|RNF-004| O sistema deve ser executado nos principais navegadores (Chrome, mozila e Edge)| MÉDIA | 
+- Usabilidade
 
--Acessibilidade
+|RNF-00| O sistema deve ser pensado para o usuário|
+|--|-------------------------------------------------------|
+|Estímulo| O Usuário realiza ações específicas e objetivas no sistema.|
+|Fonte do estímulo| Usuário.|
+|Ambiente| Sistema com carga normal.|
+|Artefato| Sistema como um todo.|
+|Resposta| Fluxo do usuário sem interrupções e com fácil navegabiliade.|
+|Medida de resposta| O usuário consegue finalizar as tarefas específicas, do início ao fim, no sistema.|
+
+- Disponibilidade
+
+|RNF-00| O sistema deve estar disponível em horário integral, durante 24h por dia e sete dias por semana|
+|--|-------------------------------------------------------|
+|Estímulo| Usuário acessa sistema no domingo no periódo da madrugada.|
+|Fonte do estímulo| Usuário.|
+|Ambiente| Sistema como carga normal.|
+|Artefato| Sistema como um todo.|
+|Resposta| O sistema deve permitir o acesso ao usuário em qualquer hora, seja do dia ou noite.|
+|Medida de resposta| Todas tentativas de acesso e requisição de informações ao sistema devem ser respondidas.|
+
+- Desempenho
+
+|RNF-00| A latência total do sistema não deve ultrapassar 10 segundos|
+|--|-------------------------------------------------------|
+|Estímulo| Usuário autenticado acessa uma funcionallidade na interface gráfica do sistema.|
+|Fonte do estímulo| Usuário autenticado.|
+|Ambiente| Sistema com carga normal.|
+|Artefato| Módulos de informações cadastrais.|
+|Resposta| O sistema processa a solicitação e retorna informação em até 10 segundos para o usuário.|
+|Medida de resposta|Resposta dos sistema com até 10 segundos de duração.|
+
+- Modificabilidade
+
+|RNF-003| O sistema deve ser modular e componentizado, utilizando orientação a objetos e ser construído com arquitetura distribuída|
+|--|-------------------------------------------------------|
+|Estímulo| Construção e integração de um novo módulo com ouros módulos da arquitetura distribuída.|
+|Fonte do estímulo| Desenvolvedor de software.|
+|Ambiente| Ambiente de desenvolvimento.|
+|Artefato| Módulos de informações cadastrais.|
+|Resposta| Módulos pré-existentes do sistema se comunicando com o novo módulo com baixo acoplamento.|
+|Medida de resposta|Qualquer intervenção de um ou mais módulos não gera reflexos generalizados no ambiente como um todo e a disponobilização de um novo módulo não interrompe os outros em funcionamento.|
+
+- Portabilidade
+
+|RNF-004| O sistema deve ser executado nos principais navegadores (Chrome, mozila e Edge)|
+|--|-------------------------------------------------------|
+|Estímulo| Usuário acessando o sistema.|
+|Fonte do estímulo| Usuário.|
+|Ambiente| Sistema com carga baixa, normal ou além do normal.|
+|Artefato| Módulos de informações cadastrais.|
+|Resposta| A interface gráfica do projeto apresenta navegabilidade nas ações disponíveis ao usuário.|
+|Medida de resposta|O usuário consegue ter acesso a interface gráfica do sistema.|
+
+- Portabilidade
 
 |RNF-00| O sistema deve ser responsivo para adaptação em dispositivos móveis| 
 |--|-------------------------------------------------------|
 |Estímulo| Usuário logado utilizazndo a interface gráfica do sistema.|
 |Fonte do estímulo| Usuário logado.|
 |Ambiente| Sistema com carga baixa, normal ou além do normal.|
-|Artefato| Módulos de conteúdo.|
+|Artefato| Módulos de informações cadastrais.|
 |Resposta| A interface gráfica do projeto apresenta navegabilidade e objetividade nas ações disponíveis ao usuário.|
 |Medida de resposta|O usuário realiza suas ações rapidamente e sem desvios indesejados para outras funcionalidades.|
-
--Desempenho
-
-|RNF-00| Deve processar requisições do usuário em no máximo 3 segundos|
-|--|-------------------------------------------------------|
-|Estímulo| Usuário autenticado acessa uma funcionallidade na interface gráfica do sistema.|
-|Fonte do estímulo| Usuário autenticado.|
-|Ambiente| Sistema com carga normal.|
-|Artefato| Módulos de canteúdo.|
-|Resposta| Entrada de usuário no sistema e acesso as páginas do sistema.|
-|Medida de resposta|Todas as requisisções com usuários e senhas corretos devem dar acesso ao usuário a área protegida do sistema.|
-
-
-
-|RNF-007| Para que o sistema seja acessado, é necessário estar conectado a internet| MÉDIA| 
-
 
 - Segurança
 
@@ -386,27 +418,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |Resposta| Cadastro de usuário no sistema.|
 |Medida de resposta| Ao verificar o banco de dados, o novo usuário deverá ter o perfil de acordo com o que foi cadastrado.|
 
-  
-|RNF-011| O sistema deve ter boa usabilidade| MÉDIA| 
-|RNF-012| O sistema deve conter mensagens que informem erros de utilização| MÉDIA| 
-|RNF-009| |
-|RNF-010| O sistema deve fazer backup a cada 24 horas|
-|RNF-008| Utilizar um banco de dados para verificar informações de usuários, cestas, beneficiários e instituições| MÉDIA| 
+- Interoperabilidade
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+|RFN-00| O sistema deverá interoperar com aplicações legadas com baixo acoplamento utilizando APIs ou outros recursos para consumo de serviços|
+|--|-------------------------------------------------------|
+|Estímulo| O sistema para completar uma operação precisa recuperar uma informação que está localizada no domínio de uma aplicação legada.|
+|Fonte do estímulo|O sistema como um todo.|
+|Ambiente| Sistema com carga normal.|
+|Artefato| Módulo de informações cadastrais.|
+|Resposta| Troca de informações com os sistemas legados.|
+|Medida de resposta| Conexão, envio de mensagens e/ou requisições e/ou respostas provenienetes de aplicações legadas.|
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+
 
 ## Restrições
 
@@ -426,6 +449,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |10| Os módulos que compõem os microsserviços no back end devem ser desenvolvidos na linguagem de programação C# utilizando .NET como ambiente de execução do lado do servidor. |
 |11| Deve ser utilizado como ferramenta de versionamento o GIT e cada módulo deve possuir repositório distinto para melhor controle das modificações do código. |
 |12| O sistema deve possuir características de aplização distribuída: abertura, portabiliadde, uso de recursos de rede. |
+|13| Os módulos do sistema devem faser uso do banco de dados relacional SQLServer.|
+|14| O sistema deve ser desenvolvido utilizando recursos de gestão de configuração, com interação contínua, para isso deve ser utillizada a plataforma como serviço (PAAS) denominada Heroku.|
 
 
 ## Mecanismos Arquiteturais
