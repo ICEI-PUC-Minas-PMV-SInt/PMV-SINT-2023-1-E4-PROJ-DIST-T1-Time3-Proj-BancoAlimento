@@ -4,7 +4,7 @@
 
 `PROJETO DESENVOLVIMENTO DE APLICAÇÕES DISTRIBUÍDAS`
 
-`4º SEMESTRE`
+`EIXO 4`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
@@ -15,7 +15,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Orientador
 
-* Luiz Alberto ferreira Gomes
+* Luiz Alberto Ferreira Gomes
 
 ## Instruções de utilização
 
