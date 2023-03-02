@@ -405,13 +405,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |Ambiente| Sistema com carga normal.|
 |Artefato| Módulo de autenticação.|
 |Resposta| Entrada de usuário no sistema e acesso as páginas do sistema.|
-|Medida de resposta|Todas as requisisções com usuários e senhas corretos devem dar acesso ao usuário a área protegida do sistema.|
+|Medida de resposta|Todas as requisições com usuários e senhas corretos devem dar acesso ao usuário a área protegida do sistema.|
 
 - Segurança
 
 |RFN-008| O sistema deve possuir controle de caesso baseado em role|
 |--|-------------------------------------------------------|
-|Estímulo| Usuário com perfil de administrador realiza cadatro de um novo usuário do sistema.|
+|Estímulo| Usuário com perfil de administrador realiza cadastro de um novo usuário do sistema.|
 |Fonte do estímulo| Usuário administrador.|
 |Ambiente| Sistema com carga baixa, normal ou além do normal.|
 |Artefato| Módulo de autenticação.|
@@ -427,7 +427,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |Ambiente| Sistema com carga normal.|
 |Artefato| Módulo de informações cadastrais.|
 |Resposta| Troca de informações com os sistemas legados.|
-|Medida de resposta| Conexão, envio de mensagens e/ou requisições e/ou respostas provenienetes de aplicações legadas.|
+|Medida de resposta| Conexão, envio de mensagens e/ou requisições e/ou respostas provenientes de aplicações legadas.|
 
 
 
@@ -448,8 +448,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |09| O sistema deve ser construido de forma modular para faciliatr a implantação. |
 |10| Os módulos que compõem os microsserviços no back end devem ser desenvolvidos na linguagem de programação C# utilizando .NET como ambiente de execução do lado do servidor. |
 |11| Deve ser utilizado como ferramenta de versionamento o GIT e cada módulo deve possuir repositório distinto para melhor controle das modificações do código. |
-|12| O sistema deve possuir características de aplização distribuída: abertura, portabiliadde, uso de recursos de rede. |
-|13| Os módulos do sistema devem faser uso do banco de dados relacional SQLServer.|
+|12| O sistema deve possuir características de aplicação distribuída: abertura, portabilidade, uso de recursos de rede. |
+|13| Os módulos do sistema devem fazer uso do banco de dados relacional SQLServer.|
 |14| O sistema deve ser desenvolvido utilizando recursos de gestão de configuração, com interação contínua, para isso deve ser utillizada a plataforma como serviço (PAAS) denominada Heroku.|
 
 
@@ -477,7 +477,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |Versionamento| Controle e armazenamento de código fonte | GitHub |
 |Versionamento| Versionamento de código fonte | Git |
 |Automação| Ferramenta de workflow | - |
-|Build| Ferramenta de build de componenetes do software | NPM |
+|Build| Ferramenta de build de componentes do software | NPM |
 
 
 
