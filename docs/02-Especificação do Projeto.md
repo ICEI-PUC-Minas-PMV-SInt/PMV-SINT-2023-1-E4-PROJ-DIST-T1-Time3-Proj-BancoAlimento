@@ -279,7 +279,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Administrador       | Alterar permissões e cadastrar novos usuários do BMA e CRAS | Permitir a administração de contas e o controle de usuários |
+|Administrador       | Alterar permissões e cadastrar novos usuários do Banco de Alimentos | Permitir a administração de contas e o controle de usuários |
 |Usuário do Banco de Alimentos | Cadastrar beneficiários |Inserir no sistema pessoas aptas ao recebimento do benefício  |
 |Usuário do Banco de Alimentos | Alterar cadastro de beneficiários| Permitir a atualização/correção de dados do beneficiário |
 |Usuário do Banco de Alimentos | Registrar cestas básicas/verdes e pontos para os quais as cestas foram enviadas | Registrar nº de cestas básicas e local de distribuição para prestação de contas |
@@ -578,7 +578,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 | HTTP Verb | Endpoint | Ação |
 |---------|---------|------|
 | GET | /benef/{id}/cesta | Obter o registro de todas a cestas básicas de um beneficiário |
-| PUT | /benef/{id}/cesta | Adicionar uma entrega de cesta para um beneficiário específico |
+| POST | /benef/{id}/cesta | Adicionar uma entrega de cesta para um beneficiário específico |
 | DELETE | /benef/{id}/cesta/{id-cesta} |Excluir o cadastro uma cesta de um beneficiário específico (somente Admin) |
 
 - Cesta Verde
@@ -586,7 +586,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 | HTTP Verb | Endpoint | Ação |
 |---------|---------|------|
 | GET | /benef/{id}/cesta-verde | Obter o registro de todas a cestas verde de um beneficiário |
-| PUT | /benef/{id}/cesta-verde | Adicionar uma entrega de cesta verde para um beneficiário específico |
+| POST | /benef/{id}/cesta-verde | Adicionar uma entrega de cesta verde para um beneficiário específico |
 | DELETE | /benef/{id}/cesta-verde/{id-cesta-verde} |Excluir o cadastro uma cesta verde de um beneficiário específico (somente Admin)|
 
 
