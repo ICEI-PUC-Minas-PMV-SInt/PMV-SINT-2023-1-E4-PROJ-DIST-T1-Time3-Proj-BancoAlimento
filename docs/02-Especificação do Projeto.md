@@ -41,7 +41,7 @@ Fonte: https://play.google.com/store/apps/details?id=br.com.vonbraunlabs.vivavid
 
 ## Histórias de Usuários
 
-No projeto são considerados dois principais tipos de usuários: funcionários vinculados ao BMA e ao CRAS que estejam envolvidos com o processo de distribuição de cestas básicas; e os beneficiários do programa de assistência social de doação de alimentos. 
+No projeto são considerados dois principais tipos de usuários: funcionários vinculados aos Banco de Alimentos dos municípios que estejam envolvidos com o processo de distribuição de cestas básicas; e os beneficiários do programa de assistência social de doação de alimentos. 
 
 No caso dos funcionários, é necessário que tais usuários tenham um perfil administrativo, pesquisador e estejam dispostos a promover o maior controle possível na distribuição de cestas básicas. São necessidades desses usuários: 
 
@@ -280,22 +280,22 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Administrador       | Alterar permissões e cadastrar novos usuários do BMA e CRAS | Permitir a administração de contas e o controle de usuários |
-|Usuário BMA/CRAS | Cadastrar beneficiários |Inserir no sistema pessoas aptas ao recebimento do benefício  |
-|Usuário BMA/CRAS | Alterar cadastro de beneficiários| Permitir a atualização/correção de dados do beneficiário |
-|Usuário BMA/CRAS | Registrar cestas básicas/verdes e pontos para os quais as cestas foram enviadas | Registrar nº de cestas básicas e local de distribuição para prestação de contas |
-|Usuário BMA/CRAS | Consultar se beneficiário já recebeu auxílio durante o período de referência | Evitar concessão de cesta básica em duplicidade |
-|Usuário BMA/CRAS | Registrar o benefício entregue ao beneficiário | Deduzir saldo e deixar registrado que o beneficiário já recebeu o benefício |
+|Usuário do Banco de Alimentos | Cadastrar beneficiários |Inserir no sistema pessoas aptas ao recebimento do benefício  |
+|Usuário do Banco de Alimentos | Alterar cadastro de beneficiários| Permitir a atualização/correção de dados do beneficiário |
+|Usuário do Banco de Alimentos | Registrar cestas básicas/verdes e pontos para os quais as cestas foram enviadas | Registrar nº de cestas básicas e local de distribuição para prestação de contas |
+|Usuário do Banco de Alimentos | Consultar se beneficiário já recebeu auxílio durante o período de referência | Evitar concessão de cesta básica em duplicidade |
+|Usuário do Banco de Alimentos | Registrar o benefício entregue ao beneficiário | Deduzir saldo e deixar registrado que o beneficiário já recebeu o benefício |
 |Beneficiário | Consultar data de recebimento do próximo benefício | Evitar deslocamento desnecessário para recebimento de benefício |
 |Beneficiário | Consultar locais com cestas disponíveis | Localizar o endereço mais próximo com cestas em estoque |
-|Cidadão| Quantidade de cestas doadas e quantidade de família atendidas| 	Dar transparência ao trabalho do BMA| 
-|Cidadão|	Quantidade de alimentos doados por fonte|	Dar transparência ao trabalho do BMA |
+|Cidadão| Quantidade de cestas doadas e quantidade de família atendidas| 	Dar transparência ao trabalho do Banco de Alimentos| 
+|Cidadão|	Quantidade de alimentos doados por fonte|	Dar transparência ao trabalho do Banco de Alimentos |
 
 O quadro abaixo apresenta uma breve definição de cada perfil: 
 
 |Perfil| Descrição
 |--------------------|------------------------------------|
-|Administrador|	Servidor do BMA/CRAS com grau máximo de visualização e controle do sistema|
-|Usuário BMA/CRAS |	Servidor/colaborador vinculado ao BMA/CRAS que recebe, separa e prepara as cestas básicas e cestas verdes, cadastra beneficiários|
+|Administrador|	Servidor do Banco de Alimentos com grau máximo de visualização e controle do sistema|
+|Usuário do Banco de Alimentos |	Servidor/colaborador vinculado ao Banco de Alimentos que recebe, separa e prepara as cestas básicas e cestas verdes, cadastra beneficiários|
 |Beneficiário| 	Pessoa que recebe a cesta básica ou a cesta verde|
 |Cidadão |	Qualquer pessoa que acesse o site para buscar infomações sobre o Banco de Alimentos|
 
@@ -322,9 +322,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-011| Consultar data de recebimento de cesta| BAIXA |
 |RF-012| Consultar local de retirada de cesta| ALTA |
 |RF-013| Consultar recebimento de cesta | ALTA |
-|RF-014| Permitir que após o usário gravar os dados de retirada de cesta, mensagens assíncronas sejam enviadas para o histórico de consulta de retiradas do portal do Beneficiário.| ALTA |
+|RF-014| Permitir que após o usuário gravar os dados de retirada de cesta, mensagens assíncronas sejam enviadas para o histórico de consulta de retiradas do portal do Beneficiário.| ALTA |
 |RF-015| Permitir que mensagem de erro seja enviada ao usuário quando a mensagem não for enviada para o histórico de consulta do portal do Beneficiário| ALTA |
 |RF-016| Fornecer a outros sistemas parceiros informações de famílias beneficiadas através da consulta pelo CPF| ALTA |
+|RF-017| Permitir o que o usuário cadastre os dependentes dos beneficiários no sistema| MÉDIA |
 
 
 
@@ -338,7 +339,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |Fonte do estímulo| Usuário.|
 |Ambiente| Sistema com carga normal.|
 |Artefato| Sistema como um todo.|
-|Resposta| Fluxo do usuário sem interrupções e com fácil navegabiliade.|
+|Resposta| Fluxo do usuário sem interrupções e com fácil navegabilidade.|
 |Medida de resposta| O usuário consegue finalizar as tarefas específicas, do início ao fim, no sistema.|
 
 - Disponibilidade
@@ -389,7 +390,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |RNF-006| O sistema deve ser responsivo para adaptação em dispositivos móveis| 
 |--|-------------------------------------------------------|
-|Estímulo| Usuário logado utilizazndo a interface gráfica do sistema.|
+|Estímulo| Usuário logado utilizando a interface gráfica do sistema.|
 |Fonte do estímulo| Usuário logado.|
 |Ambiente| Sistema com carga baixa, normal ou além do normal.|
 |Artefato| Módulos de informações cadastrais.|
@@ -400,7 +401,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |RNF-007| O sistema deve exigir autenticação prévia de usuários|
 |--|-------------------------------------------------------|
-|Estímulo| Usuário realiza ação de carregamento de uma página potregida ao qual necessita de login e senha para ser viasualizada.|
+|Estímulo| Usuário realiza ação de carregamento de uma página protegida ao qual necessita de login e senha para ser visualizada.|
 |Fonte do estímulo| Usuário autenticado.|
 |Ambiente| Sistema com carga normal.|
 |Artefato| Módulo de autenticação.|
@@ -409,7 +410,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 - Segurança
 
-|RFN-008| O sistema deve possuir controle de caesso baseado em role|
+|RFN-008| O sistema deve possuir controle de acesso baseado em role|
 |--|-------------------------------------------------------|
 |Estímulo| Usuário com perfil de administrador realiza cadastro de um novo usuário do sistema.|
 |Fonte do estímulo| Usuário administrador.|
@@ -445,12 +446,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |06| O sistema deverá expor funcionalidades e interoperar com  outras aplicação legadas através do protocolo HTTP por meio de APIs RESTful. |
 |07| O transporte de informações se dará por meio do formato JSON. |
 |08| O mecanismo de autorização entre as APIs deverá ser feiro por meio do JWT. |
-|09| O sistema deve ser construido de forma modular para faciliatr a implantação. |
+|09| O sistema deve ser construído de forma modular para facilitar a implantação. |
 |10| Os módulos que compõem os microsserviços no back end devem ser desenvolvidos na linguagem de programação C# utilizando .NET como ambiente de execução do lado do servidor. |
 |11| Deve ser utilizado como ferramenta de versionamento o GIT e cada módulo deve possuir repositório distinto para melhor controle das modificações do código. |
 |12| O sistema deve possuir características de aplicação distribuída: abertura, portabilidade, uso de recursos de rede. |
 |13| Os módulos do sistema devem fazer uso do banco de dados relacional SQLServer.|
-|14| O sistema deve ser desenvolvido utilizando recursos de gestão de configuração, com interação contínua, para isso deve ser utillizada a plataforma como serviço (PAAS) denominada Heroku.|
+|14| O sistema deve ser desenvolvido utilizando recursos de gestão de configuração, com interação contínua, para isso deve ser utilizada a plataforma como serviço (PAAS) denominada Heroku.|
 
 
 ## Mecanismos Arquiteturais
@@ -467,17 +468,17 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |Back end| Linguagem de programação | C# |
 |Back end| Framework de desenvolvimento | ASP.NET Core |
 |Back end| Ambiente de execução | .NET |
-|Back end| Serviço de execução de código | - |
+|Back end| Serviço de execução de código | Docker |
 |Back end| Gerenciador de tráfego | - |
 |Autenticação| Padrão de formato para autenticação | JWT |
-|Autenticação| Serviço de autenticação | - |
+|Autenticação| Serviço de autenticação | OAuth |
 |Integração| Formato de transporte de informações | JSON |
 |Integração| Protocolo de comunicação | HTTP |
 |Integração| Estilo de arquitetura | REST |
 |Versionamento| Controle e armazenamento de código fonte | GitHub |
 |Versionamento| Versionamento de código fonte | Git |
-|Automação| Ferramenta de workflow | - |
-|Build| Ferramenta de build de componentes do software | NPM |
+|Automação| Ferramenta de workflow | GitHub Actions |
+|Build| Ferramenta de build de componentes do software | MSBuild |
 
 
 
@@ -494,3 +495,108 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 > - [Lucidchart](https://www.lucidchart.com/)
 > - [Astah](https://astah.net/)
 > - [Diagrams](https://app.diagrams.net/)
+
+
+
+## Descrição e abordagem de ferramentas de testes
+
+| tipo de teste | Funcional |
+|--------------|----------------------|
+|subtipo de teste | Integração |
+|objetivo do teste | Teste para garantir que o software esteja interagindo corretamente com o banco de dados e que as informações estejam sendo salvas corretamente. |
+|requisitos que motivaram esse teste | RF-03 Permitir que o administrador cadastre os usuários do sistema. RF - 05 Permitir que o usuário cadastre os beneficiários. RF - 04 Permitir que o administrador consulte, altere e exclua o cadastro dos usuários do sistema. |
+
+| tipo de teste | Não Funcional |
+|--------------|----------------------|
+| subtipo de teste | Usabiliadde |
+| objetivo do teste | Testa a facilidade de uso do software para garantir que os usuários possam utilizá-lo facilmente |
+| requisitos que motivaram esse teste | RFN - 01 O sistema deve ser pensado para o usuário |
+
+| tipo de teste | Não Funcional |
+|--------------|----------------------|
+| subtipo de teste | Portabilidade |
+| objetivo do teste | Testa o software em diferentes ambientes e dispositivos para garantir que funcione em todas as plataformas suportadas |
+| requisitos que motivaram esse teste | RNF - 06 O sistema deve ser responsivo para adaptação em dispositivos móveis RNF - 05 O sistema deve ser executado nos principais navegadores (Chrome, mozila e Edge) |
+
+| tipo de teste | Não Funcional |
+|--------------|----------------------|
+| subtipo de teste | Performace |
+| objetivo do teste | Verifica se o software atende aos requisitos de desempenho especificados, como tempo de resposta e velocidade de processamento. |
+| requisitos que motivaram esse teste | RNF - 03 A latência total do sistema não deve ultrapassar 10 segundos |
+
+| tipo de teste | Não Funcional |
+|--------------|----------------------|
+| subtipo de teste | Segurança |
+| objetivo do teste | Testa a segurança do software contra vulnerabilidades e ameaças de segurança. |
+| requisitos que motivaram esse teste | RNF - 08 O sistema deve possuir controle de acesso baseado em perfil |
+
+
+## Documentação das APIs projetadas
+
+- Administrador
+
+| HTTP Verb | Endpoint | Ação |
+|---------|---------|------|
+| GET | /admin | Obter todos os administradores |
+| POST | /admin | Criar novo administrador (somente Admin) |
+| GET | /admin/{id} | Obter um administrador específico |
+| PUT | /admin/{id} | Atualizar um administrador específico (somente Admin) |
+| DELETE | /admin/{id} | Excluir um administrador específico (somente Admin) |
+
+- Usuário
+
+| HTTP Verb | Endpoint | Ação |
+|---------|---------|------|
+| GET | /user | Obter todos os usuários |
+| POST | /user | Criar novo usuário (somente Admin) |
+| GET | /user/{id} | Obter um usuário específico |
+| PUT | /user/{id} | Atualizar um usuário específico (somente Admin) |
+| DELETE | /user/{id} | Excluir um usuário específico (somente Admin) |
+
+- Beneficiário
+
+| HTTP Verb | Endpoint | Ação |
+|---------|---------|------|
+| GET | /benef | Obter todos os beneficiários cadastrados no sistema |
+| POST | /benef | Cadastrar novo beneficiário |
+| GET | /benef/{id} | Obter o cadastro de um beneficiário específico |
+| PUT | /benef/{id} | Atualizar cadastro de um beneficiário específico |
+| DELETE | /benef/{id} | Excluir um cadastro de um beneficiário específico |
+
+- Dependente
+
+| HTTP Verb | Endpoint | Ação |
+|---------|---------|------|
+| GET | /benef/{id}/dependenete | Obter todos os dependentes do beneficiários cadastrados do sistema |
+| POST | /benef{id}/dependenete | Criar novo cadastro de dependente vinculado a um beneficiário |
+| GET | /benef/{id}/dependenete/{id-dependente} | Obter um dependente específico |
+| PUT | /benef/{id}/dependenete/{id-dependente} | Atualizar um cadastro dedependente específico |
+| DELETE | /benef/{id}/dependenete/{id-dependente} | Excluir um cadastro de dependente específico |
+
+- Cesta Básica
+
+| HTTP Verb | Endpoint | Ação |
+|---------|---------|------|
+| GET | /benef/{id}/cesta | Obter o registro de todas a cestas básicas de um beneficiário |
+| PUT | /benef/{id}/cesta | Adicionar uma entrega de cesta para um beneficiário específico |
+| DELETE | /benef/{id}/cesta/{id-cesta} |Excluir o cadastro uma cesta de um beneficiário específico (somente Admin) |
+
+- Cesta Verde
+
+| HTTP Verb | Endpoint | Ação |
+|---------|---------|------|
+| GET | /benef/{id}/cesta-verde | Obter o registro de todas a cestas verde de um beneficiário |
+| PUT | /benef/{id}/cesta-verde | Adicionar uma entrega de cesta verde para um beneficiário específico |
+| DELETE | /benef/{id}/cesta-verde/{id-cesta-verde} |Excluir o cadastro uma cesta verde de um beneficiário específico (somente Admin)|
+
+
+
+
+
+
+
+
+
+
+
+
