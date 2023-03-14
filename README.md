@@ -1,4 +1,4 @@
-# BANCO DE ALIMENTOS
+# PROJETO BANCO DE ALIMENTOS
 
 `TECNOLOGIA EM SISTEMAS PARA INTERNET`
 
@@ -6,7 +6,7 @@
 
 `EIXO 4`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O Banco de Alimentos é um projeto em desenvolvimento de um sistema que permita o cadastro de famílias de forma fácil e rápida, por meio de formulário com suas informações básicas, como nome completo, endereço, dependentes, renda e situação socioeconômica. Esse sistema tem como objetivo de facilitar e agilizar o processo de cadastro de entrega de cestas básicas para famílias que encontram-se em situação de vulnerabilidade social.
 
 ## Integrantes
 
