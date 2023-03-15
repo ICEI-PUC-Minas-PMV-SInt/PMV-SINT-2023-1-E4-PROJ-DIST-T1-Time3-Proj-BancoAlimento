@@ -490,11 +490,11 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 <img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramacontexto.png/>
 ## Diagrama de Contêiner
 
-<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramacontainer.png/>
+<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramaconteiner1.png/>
 
 ## Diagrama de Componentes
 
-<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramacomponentes.png/>
+<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramaComponente.png/>
 
 
 
