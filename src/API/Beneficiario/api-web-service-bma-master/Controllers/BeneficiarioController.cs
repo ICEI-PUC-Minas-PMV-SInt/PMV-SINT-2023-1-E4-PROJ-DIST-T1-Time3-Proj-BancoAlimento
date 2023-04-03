@@ -18,7 +18,7 @@ namespace api_web_service_bma.Controllers
             _context = context;
         }
         /// <summary>
-        /// Lista todos os Beneficiários no Sistema
+        /// Listar todos os Beneficiários no Sistema
         /// </summary>
         [HttpGet]
         public async Task<ActionResult> GetAll()
@@ -28,7 +28,7 @@ namespace api_web_service_bma.Controllers
         }
 
         /// <summary>
-        /// Cria o cadastro de um Beneficiário no Sistema
+        /// Criar cadastro de um Beneficiário no Sistema
         /// </summary>
         [HttpPost]
         public async Task<ActionResult> Create(Beneficiario model)
@@ -40,7 +40,7 @@ namespace api_web_service_bma.Controllers
         }
 
         /// <summary>
-        /// Mostra o cadastro de um Beneficiário específico no Sistema
+        /// Mostrar cadastro de um Beneficiário específico no Sistema
         /// </summary>
         [HttpGet("{id}")]
         public async Task<ActionResult> GetById(int id)
@@ -53,7 +53,7 @@ namespace api_web_service_bma.Controllers
         }
 
         /// <summary>
-        /// Atualiza o cadastro de um Beneficiário específico no Sistema
+        /// Atualizar cadastro de um Beneficiário específico no Sistema
         /// </summary>
         [HttpPut("{id}")]
 
@@ -71,7 +71,7 @@ namespace api_web_service_bma.Controllers
             return NoContent();
         }
         /// <summary>
-        /// Exclui o cadastro de um Beneficiário específico no Sistema
+        /// Excluir cadastro de um Beneficiário específico no Sistema
         /// </summary>
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete (int id) 
