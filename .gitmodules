@@ -1,3 +1,6 @@
 [submodule "src/src/Front_React_BancoAlimentos"]
 	path = src/src/Front_React_BancoAlimentos
 	url = https://github.com/LaineMelo/Front_React_BancoAlimentos.git
+[submodule "src/src/Back_Api_BancoAlimentos"]
+	path = src/src/Back_Api_BancoAlimentos
+	url = https://github.com/LaineMelo/Back_Api_BancoAlimentos.git
