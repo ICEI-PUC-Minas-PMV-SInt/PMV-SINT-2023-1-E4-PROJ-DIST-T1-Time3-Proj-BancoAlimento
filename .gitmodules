@@ -1,0 +1,3 @@
+[submodule "src/src/Front_React_BancoAlimentos"]
+	path = src/src/Front_React_BancoAlimentos
+	url = https://github.com/LaineMelo/Front_React_BancoAlimentos.git
