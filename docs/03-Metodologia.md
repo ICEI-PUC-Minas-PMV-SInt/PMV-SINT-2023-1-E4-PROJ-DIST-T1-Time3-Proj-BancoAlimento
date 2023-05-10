@@ -63,8 +63,10 @@ etiquetas:
 - `enhancement`: uma funcionalidade precisa ser melhorada
 - `feature`: uma nova funcionalidade precisa ser introduzida
 
-Todo o desenvolvimento inicial de recursos deve ocorrer na branch principal (main) do projeto. As atualizações serão enviadas através de commits para o repositório central, que, após a finalização e envio de uma solicitação pull, será mesclado no projeto. As tags serão utilizadas para destacar estágios do desenvolvimento de algum recurso. Para separar o Front-end e o Back-end do projeto, utilizaremos os submódulos do Git, pois permitem manter um repositório do Git como um subdiretório de outro repositório do Git. Esses submódulos serão uma referência para outro repositório, permitindo que um incorpore e rastreie o histórico de versões de código externo.
-![Metodologia](img/fluxo_ramificacao.svg)
+Todo o desenvolvimento inicial de recursos deve ocorrer na branch principal (main) do projeto. As atualizações serão enviadas através de commits para o repositório central, que, após a finalização e envio de uma solicitação pull, será mesclado no projeto. As tags serão utilizadas para destacar estágios do desenvolvimento de algum recurso. Para separar o Front-end do Back-end no projeto, utilizaremos os submodules do Git, pois permitem manter os dois repositórios como subdiretórios do repositório principal. Esses submódulos serão uma referência para outros repositórios, permitindo que um incorpore e rastreie o histórico de versões de código externo.
+
+![Metodologia](img/page_1.png)
+
 Fluxo de trabalho por submodules
 
 https://www.atlassian.com/br/git/tutorials/git-submodule
@@ -105,6 +107,10 @@ No projeto do Banco de Alimentos (BA), serão planejadas Sprints para levantamen
 Para esse projeto ocorrerão reuniões semanais entre a equipe de desenvolvedores do projeto.
 
 Os backlogs do produto, bem como a entrega dos processos em cada Sprint, serão gerenciados e organizados por meio dos quadros de projeto fornecidos no GitHub com a utilização do modelo de Kanban automatizado. Este facilita o manejo dos backlogs do produto, organizando-os em cada sprint, além de permitir a atribuição das tarefas para cada membro da equipe.
+
+
+![gerenciamento de projeto](img/gerenciar-projeto.png)
+
  
 > **Links Úteis**:
 > - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
