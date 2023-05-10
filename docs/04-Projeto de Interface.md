@@ -3,28 +3,58 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+O projeto foi desenvolvido num tipo de aplicação Single Page Application (SPA), que consiste em carregar a página uma única vez dinamicamente sem a necessidade de carregar novamenete. Visando o funcionamento em desktops com foco na acessibilidade, agilidade e usabilidade.
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+Na página, há um Sidebar que permite ao usuário navegar por:
+
+Sobre Nós: onde é apresentada um pouco sobre a proposta da aplicação.
+Parceiros: onde é possível encontrar informações sobre os parceiros que contribuem com as doações para projetos sociais.
+Portal do Funcionário/Administrador: onde somente os administradores, munidos de login e senha, podem cadastrar, excluir e alterar informações de beneficiários e funcionários, bem como registrar as doações de cestas.
+Portal do Beneficiário: onde os beneficiários cadastrados podem realizar login com seu CPF para consultar o histórico de cestas retiradas por eles, bem como a data da próxima retirada de cestas.
 
 ## Diagrama de Fluxo
 
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
+O diagrama de fluxo é uma ferramenta importante para modelar e representar processos de negócios e sistemas. Ele permite visualizar de forma clara as etapas de um processo, identificar possíveis problemas e otimizar a execução de tarefas.
 
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
+O diagrama de fluxo apresentado representa o caminho para o cadastramento de beneficiários no sistema. O início do percurso é representado pelo box "começo", seguido pela ação de login do usuário, que pode resultar em "ok" ou "unauthorized". Após o processo de login, há outras ações necessárias para a conclusão da tarefa, como a validação dos dados do beneficiário e a inserção do cadastro no sistema. A imagem mostra que o processo é encerrado após a efetiva inserção do cadastro.
 
-![Exemplo de Diagrama de Fluxo](img/diagramafluxo2.jpg)
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
+![Diagrama de Fluxo](https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/31f9f05d028e47a528d377f6a3fdca197436776d/docs/img/BancoAlimentos%20-%20P%C3%A1gina%201%20User%20Flow%20de%20Cadastro%20Benefici%C3%A1rio.jpeg)
+<sub>Diagrama de fluxo para cadastramento de beneficiários, fonte: Autor</sub>
 
 > **Links Úteis**:
 > - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
 
-## Wireframes
+## Arquitetura da Informação
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+A arquitetura da informação pensada para a aplicação baseia-se em criar uma experiência de uso intuitiva e coerente para os usuários, aprimorando a acessibilidade, navegabilidade e usabilidade de um produto digital.
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+O Sitemap da aplicação apresenta uma lista hierárquica de todas as páginas e conteúdos do site. A aplicação do Banco de Alimentos integra o sistema de cadastramento, bem como áreas específicas informativas para o usuário geral da aplicação.
+
+![Sitemap](https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/31f9f05d028e47a528d377f6a3fdca197436776d/docs/img/sitemap.jpeg)
+<sub>Sitemap da aplicação, fonte: Autor</sub>
+
+## Protótipo de alta fidelidade
+
+###### Página Inicial
+
+![Prototipo alta fidelidade - Home](https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/31f9f05d028e47a528d377f6a3fdca197436776d/docs/img/home.png)
+
+###### Login Funcionários
+
+![Prototipo alta fidelidade - Login Funcionário](https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/31f9f05d028e47a528d377f6a3fdca197436776d/docs/img/login.png)
+
+###### Portal dos Beneficiários
+
+![Prototipo alta fidelidade - Portal Beneficiário](https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/31f9f05d028e47a528d377f6a3fdca197436776d/docs/img/portalBeneficiario.png)
+
+###### Parceiros
+
+![Prototipo alta fidelidade - Parceiros](https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/31f9f05d028e47a528d377f6a3fdca197436776d/docs/img/parceiros.png)
+
+###### Sobre Nós
+
+![Prototipo alta fidelidade - sobre Nós](https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/31f9f05d028e47a528d377f6a3fdca197436776d/docs/img/sobreNos.png)
+
  
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
