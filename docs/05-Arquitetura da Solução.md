@@ -1,10 +1,13 @@
 # Arquitetura da Solução
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>
+## Diagrama de Contexto
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
+<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramacontexto.png/>
 
-![Arquitetura da Solução](img/arch-back.JPG)
+## Diagrama de Contêiner
+
+<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramaconteiner1.png/>
+
 
 ## Diagrama de Classes
 
@@ -49,6 +52,11 @@ As tecnologias utilizadas no desenvolvimento do software foram:
 > - Modelagem de Dados: MySQL Server 
 > - Servidor: Google Cloud;
 > - Hospedagem em Nvem: Azzure;
+
+## Diagrama de Componentes
+
+<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramaComponente.png/>
+
 
 
 ## Mecanismos Arquiteturais
