@@ -481,25 +481,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |Build| Ferramenta de build de componentes do software | MSBuild |
 
 
-
-
-## Modelagem e Projeto Arquitetural
-
-## Diagrama de Contexto
-
-<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramacontexto.png/>
-
-## Diagrama de Contêiner
-
-<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramaconteiner1.png/>
-
-## Diagrama de Componentes
-
-<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramaComponente.png/>
-
-
-
-
 ## Descrição e abordagem de ferramentas de testes
 
 | tipo de teste | Funcional |
