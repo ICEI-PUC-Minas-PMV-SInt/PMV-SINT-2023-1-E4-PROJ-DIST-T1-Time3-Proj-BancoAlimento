@@ -45,6 +45,32 @@ Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, 
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
+## Mecanismos Arquiteturais
+
+|Ambiente | Design  | Implementação |
+|------|-----------------------------------------|----|
+|Persistência| Framework ORM | Entity Framework | 
+|Persistência| Banco de dados relacional | SQLServer |
+|Front end| Framework de desenvolvimento | React |
+|Front end| Linguagem de programação | JavaScript |
+|Front end| Framework de folhas de estilos | Bootstrap |
+|Folhas de estilo| Linguagem de folha de estilos | CSS |
+|Deploy| Plataforma de automatização de deploy | Heroku |
+|Back end| Linguagem de programação | C# |
+|Back end| Framework de desenvolvimento | ASP.NET Core |
+|Back end| Ambiente de execução | .NET |
+|Back end| Serviço de execução de código | Docker |
+|Back end| Gerenciador de tráfego | - |
+|Autenticação| Padrão de formato para autenticação | JWT |
+|Autenticação| Serviço de autenticação | OAuth |
+|Integração| Formato de transporte de informações | JSON |
+|Integração| Protocolo de comunicação | HTTP |
+|Integração| Estilo de arquitetura | REST |
+|Versionamento| Controle e armazenamento de código fonte | GitHub |
+|Versionamento| Versionamento de código fonte | Git |
+|Automação| Ferramenta de workflow | GitHub Actions |
+|Build| Ferramenta de build de componentes do software | MSBuild |
+
 ## Hospedagem
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.
