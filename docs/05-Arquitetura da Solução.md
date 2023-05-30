@@ -55,11 +55,11 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 |Front end| Linguagem de programação | JavaScript |
 |Front end| Framework de folhas de estilos | Bootstrap |
 |Folhas de estilo| Linguagem de folha de estilos | CSS |
-|Deploy| Plataforma de automatização de deploy | Heroku |
+|Deploy| Plataforma de automatização de deploy | GitHub Actions |
 |Back end| Linguagem de programação | C# |
 |Back end| Framework de desenvolvimento | ASP.NET Core |
 |Back end| Ambiente de execução | .NET |
-|Back end| Serviço de execução de código | Docker |
+|Back end| Serviço de execução de código | - |
 |Back end| Gerenciador de tráfego | - |
 |Autenticação| Padrão de formato para autenticação | JWT |
 |Autenticação| Serviço de autenticação | OAuth |
