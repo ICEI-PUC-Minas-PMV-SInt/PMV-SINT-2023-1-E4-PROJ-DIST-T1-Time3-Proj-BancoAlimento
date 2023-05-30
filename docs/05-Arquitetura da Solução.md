@@ -46,12 +46,12 @@ Entregar um arquivo dml.sql contendo os scripts de manipulação de banco de dad
 
 As tecnologias utilizadas no desenvolvimento do software foram:
 
-> - Desenho de protótipo: Adobe Xd
-> - Desenvolvimento Front-end: React Js; 
-> - Desenvolvimento Back-end:.NET 6.0;
-> - Modelagem de Dados: MySQL Server 
-> - Servidor: Google Cloud;
-> - Hospedagem em Nvem: Azzure;
+- Desenho de protótipo: Adobe Xd
+- Desenvolvimento Front-end: React Js; 
+- Desenvolvimento Back-end:.NET 6.0;
+- Modelagem de Dados: MySQL Server 
+- Servidor: Google Cloud;
+- Hospedagem em Nuvem: Azzure;
 
 ## Diagrama de Componentes
 
