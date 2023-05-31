@@ -1,8 +1,11 @@
 # Arquitetura da Solução
 
-O modelo arquitetural adotado no projeto foi o C4 Model, que visa descrever a estrutura arquitetural do software em diferentes níveis de abstração. Composto pelos níveis de contexto, contêiner e componentes, essa abordagem facilita a documentação, manutenção e evolução do software.
+<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/iconografia_api.png/>
+
 
 ## Modelagem e projeto arquitetural
+
+O modelo arquitetural adotado no projeto foi o C4 Model, que visa descrever a estrutura arquitetural do software em diferentes níveis de abstração. Composto pelos níveis de contexto, contêiner e componentes, essa abordagem facilita a documentação, manutenção e evolução do software.
 
 ### Diagrama de Contexto
 
@@ -72,6 +75,7 @@ As tecnologias utilizadas no desenvolvimento do software foram:
 - Hospedagem em Nuvem: Azzure;
 
 
+
 ### Mecanismos Arquiteturais
 
 |Ambiente | Design  | Implementação |
@@ -100,7 +104,19 @@ As tecnologias utilizadas no desenvolvimento do software foram:
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+A hospedagem do front-end e back-end foi feita na plataforma Azure. O back-end foi implantado por meio do GitHub Actions, utilizando Integração Contínua (CI/CD), juntamente com um serviço de gerenciamento de APIs. O banco de dados foi provisionado no Google Cloud SQL. 
+
+###### Front-end
+<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/deploy_front.png/>
+<hr/>
+
+###### Back-end
+<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/deploy_back.png/>
+<hr/>
+
+###### Banco de dados
+<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/googlecloud.png/>
+<hr/>
 
 > **Links Úteis**:
 >
