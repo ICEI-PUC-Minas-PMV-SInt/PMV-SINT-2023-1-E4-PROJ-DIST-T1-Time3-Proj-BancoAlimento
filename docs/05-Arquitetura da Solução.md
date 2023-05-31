@@ -1,13 +1,31 @@
 # Arquitetura da Solução
 
-## Diagrama de Contexto
+O modelo arquitetural adotado no projeto foi o C4 Model, que visa descrever a estrutura arquitetural do software em diferentes níveis de abstração. Composto pelos níveis de contexto, contêiner e componentes, essa abordagem facilita a documentação, manutenção e evolução do software.
+
+## Modelagem e projeto arquitetural
+
+### Diagrama de Contexto
+
+O primeiro nível é composto por uma abordagem mais ampla, onde os detalhes não são tão relevantes, e mostra o contexto em que o software está inserido, incluindo interações entre sistemas e usuários.
 
 <img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramacontexto.png/>
+<hr/>
 
-## Diagrama de Contêiner
+### Diagrama de Contêiner
+
+A camada container expõe a arquitetura de forma simplificada, exibindo as tecnologias usadas e como a comunicação acontece. 
+O diagrama de container contém um nível maior de detalhes e é útil para a(s) equipe(s) de desenvolvimento, arquitetos e devOps.
 
 <img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramaconteiner1.png/>
+<hr/>
 
+### Diagrama de Componentes
+
+Esssa camada tem foco nas funcionalidades, apresentando suas resposablidades e tecnologias.
+Nesse nível um componenete pode ser uma classe num sistema desenvolvido em POO.
+
+<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramaComponente.png/>
+<hr/>
 
 ## Diagrama de Classes
 
@@ -49,17 +67,12 @@ As tecnologias utilizadas no desenvolvimento do software foram:
 - Desenho de protótipo: Adobe Xd
 - Desenvolvimento Front-end: React Js; 
 - Desenvolvimento Back-end:.NET 6.0;
-- Modelagem de Dados: MySQL Server 
-- Servidor: Google Cloud;
+- Servidor do banco de dados: SQL Server 
+- Armazenamento de objetos: Google Cloud;
 - Hospedagem em Nuvem: Azzure;
 
-## Diagrama de Componentes
 
-<img src=https://github.com/ICEI-PUC-Minas-PMV-SInt/PMV-SINT-2023-1-E4-PROJ-DIST-T1-Time3-Proj-BancoAlimento/blob/main/docs/img/diagramaComponente.png/>
-
-
-
-## Mecanismos Arquiteturais
+### Mecanismos Arquiteturais
 
 |Ambiente | Design  | Implementação |
 |------|-----------------------------------------|----|
